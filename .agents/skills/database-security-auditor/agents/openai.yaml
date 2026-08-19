@@ -1,0 +1,4 @@
+interface:
+  display_name: "Database Security Auditor"
+  short_description: "Independently audit Supabase database security"
+  default_prompt: "Use $database-security-auditor to audit this database or RLS change."

@@ -1155,3 +1155,26 @@ a simpler implementation that safely meets current requirements
 prefer the simpler implementation.
 
 Add complexity only when the current product genuinely requires it.
+
+---
+
+# 59. Mandatory Independent Review
+
+No feature affecting authentication, authorization, financial calculation, database access, RLS, delivery pricing, provider integrations, webhooks, or payments may be considered complete solely by the agent that implemented it.
+
+Before completion, delegate independent review to:
+
+- `database-security-auditor` when database/RLS is affected
+- `appsec-auditor` when backend/security is affected
+- `ui-ux-auditor` when UI is affected
+- `accessibility-agent` when user-facing UI is affected
+- `api-documentation-agent` when an API changes
+- `qa-e2e-agent` for behavioral verification
+
+All audit agents must document results under `/audits`.
+
+All public/backend APIs and Edge Functions must be documented under `/docs/api`.
+
+The `release-gate` agent must review outstanding findings before a feature or release is considered ready.
+
+A feature with unresolved Critical or High security findings must not be marked release-ready.

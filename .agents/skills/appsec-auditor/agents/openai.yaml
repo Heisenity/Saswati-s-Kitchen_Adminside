@@ -1,0 +1,4 @@
+interface:
+  display_name: "AppSec Auditor"
+  short_description: "Independently audit application security risks"
+  default_prompt: "Use $appsec-auditor to audit this feature for application security risks."

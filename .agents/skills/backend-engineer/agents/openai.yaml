@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend Engineer"
+  short_description: "Build secure Supabase business logic"
+  default_prompt: "Use $backend-engineer to implement this backend feature safely."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA E2E Agent"
+  short_description: "Independently verify critical user workflows"
+  default_prompt: "Use $qa-e2e-agent to run an end-to-end audit of this feature."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Docs Agent"
+  short_description: "Keep APIs and contracts accurately documented"
+  default_prompt: "Use $api-docs-agent to document and audit this API change."

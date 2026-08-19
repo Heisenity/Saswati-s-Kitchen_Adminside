@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Gate"
+  short_description: "Make evidence-based release readiness decisions"
+  default_prompt: "Use $release-gate to review feature audits for release readiness."

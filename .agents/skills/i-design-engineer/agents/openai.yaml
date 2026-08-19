@@ -1,0 +1,4 @@
+interface:
+  display_name: "I Design Engineer"
+  short_description: "Build accessible, operational admin UI"
+  default_prompt: "Use $i-design-engineer to implement this Admin Portal UI task."
